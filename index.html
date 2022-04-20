@@ -192,7 +192,7 @@
                         <a-entity class="progress" geometry="primitive: plane; height: 0.4; width: 32" scale="1 1 1" position="0 -3.5 0.0001" material="shader: flat; color: #133754;"></a-entity>
                     </a-entity>
 
-                    <a-cursor></a-cursor>
+                    <!-- <a-cursor></a-cursor> -->
 
                 </a-camera>
 
@@ -279,7 +279,7 @@
 
             <!-- START: test super hand interaction -->
             <a-assets>
-                <!-- <a-mixin id="all-interactions"
+                <a-mixin id="all-interactions"
                 hoverable grabbable stretchable draggable
                 event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true"
                 event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false"
@@ -301,11 +301,11 @@
                                             colliderEventProperty: els;
                                             colliderEndEvent: collisions;
                                             colliderEndEventProperty: clearedEls;"
-                    ></a-mixin> -->
+                    ></a-mixin>
 
-                    <!-- <a-mixin id="cube" geometry="primitive: box; width: 0.33; height: 0.33; depth: 0.33" hoverable="" grabbable="" stretchable="" draggable="" droppable="" event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true" event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false" body="shape: none" shape="shape: box; halfExtents: 0.165 0.165 0.165" shadow=""></a-mixin> -->
+                    <a-mixin id="cube" geometry="primitive: box; width: 0.33; height: 0.33; depth: 0.33" hoverable="" grabbable="" stretchable="" draggable="" droppable="" event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true" event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false" body="shape: none" shape="shape: box; halfExtents: 0.165 0.165 0.165" shadow=""></a-mixin>
 
-                    <a-mixin id="cube"
+                    <!-- <a-mixin id="cube"
                     event-set__grab="material.color: #FFEF4F"
                     event-set__grabend="material.color: #F2E646"
                     event-set__hit="material.color: #F2E646"
@@ -315,7 +315,7 @@
                     event-set__mouseleave="material.color: #EF2D5E"
                     event-set__mouseup="material.color: #F2E646"
                     geometry="primitive: box; height: 0.30; width: 0.30; depth: 0.30"
-                    material="color: #EF2D5E;"></a-mixin>
+                    material="color: #EF2D5E;"></a-mixin> -->
             </a-assets>
             <!-- <a-entity id="rhand" mixin="physics-hands"
             hand-controls="hand: right">
@@ -333,8 +333,8 @@
                 <a-entity sphere-collider="objects: a-box" super-hands hand-controls="hand: right"></a-entity>
               </a-entity>
               <!-- hover & drag-drop won't have any obvious effect without some additional event handlers or components. See the examples page for more -->
-              <!-- <a-box class="cube" mixin="cube all-interactions" color="blue" position="10 0 -1"></a-box>
-              <a-entity class="cube" mixin="cube" position="12 0 -1" material="color: red" geometry="" hoverable="" grabbable="" stretchable="" draggable="" droppable="" event-set__hoveron="" event-set__hoveroff="" velocity="" body="" shape="" shadow="" transparent="false"></a-entity> -->
+              <a-box class="cube" mixin="cube all-interactions" color="blue" position="10 0 -1"></a-box>
+              <!-- <a-entity class="cube" mixin="cube" position="12 0 -1" material="color: red" geometry="" hoverable="" grabbable="" stretchable="" draggable="" droppable="" event-set__hoveron="" event-set__hoveroff="" velocity="" body="" shape="" shadow="" transparent="false"></a-entity> -->
 
               <a-entity class="cube" mixin="cube" position="7 0 -1"></a-entity>
 
